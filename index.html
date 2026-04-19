@@ -294,23 +294,13 @@
     overflow: hidden;
   }
 
-  .portrait::before {
-    content: '';
+  .portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     inset: 0;
-    background: repeating-linear-gradient(
-      -45deg, transparent, transparent 4px,
-      rgba(255,255,255,0.06) 4px, rgba(255,255,255,0.06) 5px
-    );
-  }
-
-  .portrait-lbl {
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    color: rgba(255,255,255,0.45);
-    font-weight: 600;
-    text-transform: uppercase;
-    position: relative;
+    display: block;
   }
 
   .fact-item {
@@ -728,7 +718,7 @@
         Sujwol
         <span class="surname">Khanal.</span>
       </div>
-      <p class="hero-tagline">A student who uses data and economics to understand human decisions — and builds real things with that knowledge.</p>
+      <p class="hero-tagline">A student who uses data and economics to understand human decisions, building real things with that knowledge.</p>
     </div>
 
     <div class="hero-bottom">
@@ -742,12 +732,12 @@
   <div class="hero-right">
     <span class="hero-right-label">Quick Profile</span>
     <ul class="profile-list">
-      <li class="profile-item"><span class="profile-item-tag">Heritage</span><span class="profile-item-val">Nepali-American</span></li>
-      <li class="profile-item"><span class="profile-item-tag">School</span><span class="profile-item-val">Cox Mill HS — Sophomore</span></li>
+      <li class="profile-item"><span class="profile-item-tag">Heritage</span><span class="profile-item-val">Nepali</span></li>
+      <li class="profile-item"><span class="profile-item-tag">School</span><span class="profile-item-val">Cox Mill HS, Sophomore</span></li>
       <li class="profile-item"><span class="profile-item-tag">Research</span><span class="profile-item-val">USC Darla Moore Business School</span></li>
       <li class="profile-item"><span class="profile-item-tag">Econ</span><span class="profile-item-val">CORE Econ · USAEO Track</span></li>
       <li class="profile-item"><span class="profile-item-tag">DECA</span><span class="profile-item-val">Director of Hospitality</span></li>
-      <li class="profile-item"><span class="profile-item-tag">Nonprofit</span><span class="profile-item-val">Men's Mill Mind — Founder</span></li>
+      <li class="profile-item"><span class="profile-item-tag">Nonprofit</span><span class="profile-item-val">Men's Mill Mind, Founder</span></li>
       <li class="profile-item"><span class="profile-item-tag">Soccer</span><span class="profile-item-val">Varsity · All-Conference · MLS Next</span></li>
       <li class="profile-item"><span class="profile-item-tag">Goal</span><span class="profile-item-val">UNC Chapel Hill · Morehead-Cain</span></li>
     </ul>
@@ -761,23 +751,25 @@
 
   <div class="about-layout reveal">
     <div>
-      <div class="portrait"><span class="portrait-lbl">Portrait ↗</span></div>
+      <div class="portrait">
+        <img src="portrait.jpg" alt="Sujwol Khanal">
+      </div>
       <div class="fact-item"><span class="fi-k">School</span><span class="fi-v">Cox Mill HS</span></div>
       <div class="fact-item"><span class="fi-k">Location</span><span class="fi-v">Concord, NC</span></div>
       <div class="fact-item"><span class="fi-k">GPA</span><span class="fi-v">4.0 / 4.5W</span></div>
       <div class="fact-item"><span class="fi-k">Rank</span><span class="fi-v">#1 of 444</span></div>
-      <div class="fact-item"><span class="fi-k">Heritage</span><span class="fi-v">Nepali-American</span></div>
-      <div class="fact-item"><span class="fi-k">Class</span><span class="fi-v">2027</span></div>
+      <div class="fact-item"><span class="fi-k">Heritage</span><span class="fi-v">Nepali</span></div>
+      <div class="fact-item"><span class="fi-k">Class</span><span class="fi-v">2028</span></div>
     </div>
 
     <div>
       <div class="body-col">
-        <p>My parents crossed an ocean. They came from Nepal — a country of Himalayan peaks, ancient trade routes, and a culture that treats education as the most sacred form of inheritance — and settled in Concord, North Carolina, where I was born and raised.</p>
-        <p>Growing up Nepali-American gave me something I didn't fully understand until recently: the ability to see systems from outside themselves. I learned early that the rules everyone around me took for granted were not universal. That discomfort became intellectual curiosity.</p>
+        <p>My parents crossed an ocean. They came from Nepal, a country of Himalayan peaks, ancient trade routes, and a culture that treats education as the most sacred form of inheritance, and settled in Concord, North Carolina, where I was born and raised.</p>
+        <p>Growing up as the child of Nepali immigrants gave me something I didn't fully understand until recently: the ability to see systems from outside themselves. I learned early that the rules everyone around me took for granted were not universal. That discomfort became intellectual curiosity.</p>
         <div class="pull-q">"I use data to understand decisions. I build things with what I learn."</div>
         <p>Academically, I'm ranked first in my class of 444 at Cox Mill High School with a 4.0 unweighted GPA. These numbers matter less to me than what they represent: sustained intellectual seriousness alongside varsity athletics and founding a nonprofit from nothing.</p>
         <p>My intellectual home is behavioral economics and statistics. I've been self-studying university-level economics through the CORE Econ curriculum and am preparing for the USAEO and Economics Olympiad Americas. Last summer I conducted research at the USC Darla Moore Business School on the Chief AI Officer role in corporate strategy.</p>
-        <p>I also founded Men's Mill Mind, a mental health nonprofit for young men, and serve as Director of Hospitality at DECA. I play varsity soccer having spent years in the MLS Next Academy. I don't separate these parts of myself — they're the same person.</p>
+        <p>I also founded Men's Mill Mind, a mental health nonprofit for young men, and serve as Director of Hospitality at DECA. I play varsity soccer having spent years in the MLS Next Academy. I don't separate these parts of myself. They're the same person.</p>
       </div>
     </div>
   </div>
@@ -791,7 +783,7 @@
 
     <div class="goals-grid">
       <div class="goals-body">
-        <p>UNC Chapel Hill is not a default choice. It is a deliberate one. I intend to study Statistics with an Economics minor — a combination that maps precisely onto who I am becoming: someone who quantifies human behavior and builds models that explain it.</p>
+        <p>UNC Chapel Hill is not a default choice. It is a deliberate one. I intend to study Statistics with an Economics minor, a combination that maps precisely onto who I am becoming: someone who quantifies human behavior and builds models that explain it.</p>
         <div class="big-pull">"Chapel Hill is where I believe I can do the most meaningful early work of my life."</div>
         <p>The Morehead-Cain Scholarship is not simply a financial instrument. It is a community organized around a specific set of values: leadership in service of something larger than personal advancement, intellectual seriousness combined with practical action. I have been practicing both my whole life.</p>
         <p>The scholarship's four summers of leadership development, its network, and its resources for research and civic work align exactly with where my life is already moving. I am not asking to be shaped. I am asking to be equipped.</p>
@@ -824,7 +816,7 @@
   <div class="proj-table reveal">
     <div class="proj-row">
       <span class="p-num">i.</span>
-      <div><div class="p-title">Data-Driven Soccer Training</div><div class="p-desc">Sports analytics applied to youth development — where economist meets athlete.</div></div>
+      <div><div class="p-title">Data-Driven Soccer Training</div><div class="p-desc">Sports analytics applied to youth development, where economist meets athlete.</div></div>
       <span class="p-type">Sports / Analytics</span>
       <span class="p-status">In Development</span>
     </div>
@@ -836,7 +828,7 @@
     </div>
     <div class="proj-row">
       <span class="p-num">iii.</span>
-      <div><div class="p-title">Men's Mill Mind</div><div class="p-desc">Nonprofit I founded to address mental health among young men at Cox Mill — built from nothing.</div></div>
+      <div><div class="p-title">Men's Mill Mind</div><div class="p-desc">Nonprofit I founded to address mental health among young men at Cox Mill, built from nothing.</div></div>
       <span class="p-type">Nonprofit</span>
       <span class="p-status">Founder</span>
     </div>
@@ -849,10 +841,10 @@
   <h2 class="display-hed">Research &amp;<br><em>Academics</em></h2>
 
   <div class="r-grid reveal">
-    <div class="r-card"><div class="r-num">01</div><div class="r-title">USC Darla Moore Business School</div><div class="r-body">Research on the Chief AI Officer role in corporate strategy — how organizations integrate AI governance and the economic implications of those structural choices.</div><span class="r-tag">Summer 2024 · Research</span></div>
+    <div class="r-card"><div class="r-num">01</div><div class="r-title">USC Darla Moore Business School</div><div class="r-body">Research on the Chief AI Officer role in corporate strategy, examining how organizations integrate AI governance and the economic implications of those structural choices.</div><span class="r-tag">Summer 2024 · Research</span></div>
     <div class="r-card"><div class="r-num">02</div><div class="r-title">CORE Econ — University-Level Study</div><div class="r-body">Self-studying behavioral economics, game theory, and institutional economics. Preparing for the USAEO and Economics Olympiad Americas.</div><span class="r-tag">Ongoing · USAEO Track</span></div>
-    <div class="r-card"><div class="r-num">03</div><div class="r-title">DECA — Director of Hospitality</div><div class="r-body">Leading one of NC's most competitive chapters. Running for VP of Career Development Role Play — organizational economics in practice.</div><span class="r-tag">2024–25 · Officer</span></div>
-    <div class="r-card"><div class="r-num">04</div><div class="r-title">YIS Certified Youth Investment Analyst</div><div class="r-body">Behavioral finance and real-market analysis at the intersection of the two fields I care about most.</div><span class="r-tag">Certified · Finance</span></div>
+    <div class="r-card"><div class="r-num">03</div><div class="r-title">DECA — Director of Hospitality</div><div class="r-body">Leading one of NC's most competitive chapters. Running for VP of Career Development Role Play, organizational economics in practice.</div><span class="r-tag">2024–25 · Officer</span></div>
+    <div class="r-card"><div class="r-num">04</div><div class="r-title">YIS Youth Investment Analyst</div><div class="r-body">Working towards certification in behavioral finance and real-market analysis at the intersection of economics and finance.</div><span class="r-tag">In Progress · Finance</span></div>
   </div>
 </section>
 
@@ -861,20 +853,7 @@
   <div class="sec-label">Chapter Five · Voice</div>
   <h2 class="display-hed">Content &amp;<br><em>YouTube</em></h2>
 
-  <div class="yt-layout reveal">
-    <div class="yt-feat">
-      <div class="yt-thumb"><div class="yt-play">▶</div></div>
-      <span class="yt-feat-lbl">Featured Video</span>
-      <div class="yt-feat-title">Why Incentives Don't Always Work the Way We Think</div>
-      <div class="yt-feat-desc">A video essay on the gap between economic theory and human behavior — and why that gap is the most interesting place to do research.</div>
-    </div>
-    <div>
-      <div class="yt-item"><span class="yt-n">02</span><div class="yt-t">What Soccer Taught Me About Game Theory</div><div class="yt-m">Reflection · 12 min</div></div>
-      <div class="yt-item"><span class="yt-n">03</span><div class="yt-t">The AI Officer Problem: Who Decides the Future?</div><div class="yt-m">Research · 9 min</div></div>
-      <div class="yt-item"><span class="yt-n">04</span><div class="yt-t">Being Nepali-American at a US High School</div><div class="yt-m">Personal · 7 min</div></div>
-      <div class="yt-item"><span class="yt-n">05</span><div class="yt-t">Starting a Nonprofit at 15</div><div class="yt-m">Building · 10 min</div></div>
-    </div>
-  </div>
+  <div style="padding: 4rem 0; text-align: center; color: var(--mid); font-family: 'Libre Baskerville', serif; font-style: italic; font-size: 1.3rem;">Coming Soon!</div>
 </section>
 
 <!-- ATHLETICS -->
@@ -890,9 +869,9 @@
   </div>
 
   <div class="ath-body reveal" style="padding-bottom: clamp(4rem,8vw,8rem)">
-    <p>Soccer has been in my life as long as economics. Playing at the MLS Next Academy level was not just athletic — it was a seminar in systems thinking: how individual decisions compound into collective outcomes, how pressure reveals character, how preparation creates the illusion of talent.</p>
+    <p>Soccer has been in my life as long as economics. Playing at the MLS Next Academy level was not just athletic. It was a seminar in systems thinking: how individual decisions compound into collective outcomes, how pressure reveals character, how preparation creates the illusion of talent.</p>
     <div class="pull-q">"The pitch taught me that intelligence without execution is just theory."</div>
-    <p>I earned All-Conference honors at Cox Mill, where I play varsity. I'm now turning that background into a data-driven soccer training business — the intersection of my two identities as economist and athlete, built into a single venture. The discipline soccer demands translates to every other part of my life. I don't separate my athletic self from my academic self. They're the same person.</p>
+    <p>I earned All-Conference honors at Cox Mill, where I play varsity. I'm now turning that background into a data-driven soccer training business, the intersection of my two identities as economist and athlete, built into a single venture. The discipline soccer demands translates to every other part of my life. I don't separate my athletic self from my academic self; they're the same person.</p>
   </div>
 </section>
 
@@ -901,12 +880,7 @@
   <div class="sec-label">Chapter Seven · Thought</div>
   <h2 class="display-hed">Journal &amp;<br><em>Writing</em></h2>
 
-  <div class="j-grid">
-    <div class="j-col"><span class="j-dt">Mar 2025</span><div class="j-ttl">On Why Ambition Is Not the Same as Purpose</div><div class="j-exc">The difference between wanting to win and knowing why — and what that costs.</div></div>
-    <div class="j-col"><span class="j-dt">Feb 2025</span><div class="j-ttl">What the Ultimatum Game Gets Wrong About Fairness</div><div class="j-exc">Behavioral economics experiments and Nepali vs. American conceptions of justice.</div></div>
-    <div class="j-col"><span class="j-dt">Jan 2025</span><div class="j-ttl">Founding a Nonprofit Taught Me More Than Coursework</div><div class="j-exc">Why Men's Mill Mind was an economics seminar in disguise.</div></div>
-    <div class="j-col"><span class="j-dt">Dec 2024</span><div class="j-ttl">The Data Is Never Neutral: Notes from Darla Moore</div><div class="j-exc">What research taught me about the limits of quantitative methods.</div></div>
-  </div>
+  <div style="padding: 4rem 0; text-align: center; color: var(--mid); font-family: 'Libre Baskerville', serif; font-style: italic; font-size: 1.3rem;">Coming Soon!</div>
 </section>
 
 <!-- CONTACT -->
@@ -915,7 +889,7 @@
   <div class="contact-inner reveal">
     <div>
       <div class="contact-hed">Get in<br><em>Touch</em></div>
-      <p class="contact-sub">Whether you're an admissions officer, a scholarship committee member, or a potential collaborator — I'd genuinely like to hear from you.</p>
+      <p class="contact-sub">Whether you're an admissions officer, a scholarship committee member, or a potential collaborator, I'd genuinely like to hear from you.</p>
     </div>
     <div>
       <div class="c-table">
@@ -930,7 +904,7 @@
 <footer>
   <span>© Sujwol Khanal · 2025</span>
   <span>Cox Mill High School · Concord, NC</span>
-  <span>Class of 2027</span>
+  <span>Class of 2028</span>
 </footer>
 
 <script>
